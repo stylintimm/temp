@@ -46,15 +46,26 @@
                                     <action selector="reset:" destination="2" eventType="touchUpInside" id="nB8-t2-Gq6"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="New Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="las-CU-m3Y">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="BCk-Op-I46"/>
+                                    <constraint firstAttribute="width" constant="126" id="EG9-57-89D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Yqb-pJ-Zq3" firstAttribute="centerX" secondItem="hah-n0-tPl" secondAttribute="centerX" type="default" id="3QE-G1-fhu"/>
+                            <constraint firstAttribute="bottom" secondItem="las-CU-m3Y" secondAttribute="bottom" constant="97" id="3x7-Tm-gPj"/>
                             <constraint firstAttribute="trailing" secondItem="hah-n0-tPl" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="DQS-qu-Y8g"/>
                             <constraint firstItem="hah-n0-tPl" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Il3-R2-NAe"/>
                             <constraint firstItem="hah-n0-tPl" firstAttribute="top" secondItem="3" secondAttribute="top" constant="263" id="NYr-C8-OSB"/>
                             <constraint firstAttribute="trailing" secondItem="lOo-Ox-aa8" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Vak-Zm-EU3"/>
                             <constraint firstAttribute="bottom" secondItem="lOo-Ox-aa8" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="bh0-LK-KXT"/>
+                            <constraint firstItem="las-CU-m3Y" firstAttribute="centerX" secondItem="hah-n0-tPl" secondAttribute="centerX" type="default" id="lYu-n1-9SY"/>
                             <constraint firstItem="Yqb-pJ-Zq3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="152" id="xLO-1V-CDS"/>
                         </constraints>
                     </view>
@@ -68,6 +79,20 @@
             <point key="canvasLocation" x="244" y="80"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="GitUseExampleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GitUseExampleViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="clickMe:"/>
+                <relationship kind="action" name="reset:"/>
+                <relationship kind="outlet" name="buttonClicked" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="myLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
