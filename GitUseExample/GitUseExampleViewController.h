@@ -13,4 +13,5 @@
 @property (strong, nonatomic) IBOutlet UILabel *myLabel;
 - (IBAction)clickMe:(id)sender;
 
+- (IBAction)reset:(id)sender;
 @end

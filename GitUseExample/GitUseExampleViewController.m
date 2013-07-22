@@ -28,7 +28,12 @@
 
 - (IBAction)clickMe:(id)sender {
     _myLabel.text = @"This is a GIT Tutorial";
-    _buttonClicked.titleLabel.text = @"Clicked";
+
     [_buttonClicked setTitle:@"Clicked" forState:UIControlStateNormal];
+}
+
+- (IBAction)reset:(id)sender {
+    _myLabel.text = nil;
+    [_buttonClicked setTitle:@"Click Me" forState:UIControlStateNormal];
 }
 @end

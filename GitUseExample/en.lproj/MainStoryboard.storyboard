@@ -33,6 +33,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOo-Ox-aa8">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="2" eventType="touchUpInside" id="nB8-t2-Gq6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -40,6 +53,8 @@
                             <constraint firstAttribute="trailing" secondItem="hah-n0-tPl" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="DQS-qu-Y8g"/>
                             <constraint firstItem="hah-n0-tPl" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Il3-R2-NAe"/>
                             <constraint firstItem="hah-n0-tPl" firstAttribute="top" secondItem="3" secondAttribute="top" constant="263" id="NYr-C8-OSB"/>
+                            <constraint firstAttribute="trailing" secondItem="lOo-Ox-aa8" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Vak-Zm-EU3"/>
+                            <constraint firstAttribute="bottom" secondItem="lOo-Ox-aa8" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="bh0-LK-KXT"/>
                             <constraint firstItem="Yqb-pJ-Zq3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="152" id="xLO-1V-CDS"/>
                         </constraints>
                     </view>
@@ -50,21 +65,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="244" y="80"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="GitUseExampleViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GitUseExampleViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="clickMe:"/>
-                <relationship kind="outlet" name="buttonClicked" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="myLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
