@@ -26,4 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)clickMe:(id)sender {
+    _myLabel.text = @"This is a GIT Tutorial";
+    _buttonClicked.titleLabel.text = @"Clicked";
+    [_buttonClicked setTitle:@"Clicked" forState:UIControlStateNormal];
+}
 @end

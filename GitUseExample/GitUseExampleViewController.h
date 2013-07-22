@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface GitUseExampleViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIButton *buttonClicked;
+@property (strong, nonatomic) IBOutlet UILabel *myLabel;
+- (IBAction)clickMe:(id)sender;
 
 @end
